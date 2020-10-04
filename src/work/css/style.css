@@ -118,7 +118,7 @@ body{
     filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);
 }
 
-.new-action-img {}
+
 
 
 /* 新規アクションのアイコン系 終わり */
@@ -145,9 +145,7 @@ div.left>a {
     margin: 10px 0px 10px 30px;
 }
 
-header {
-    /* position: fixed; */
-}
+
 
 .site-image-icon {
     width: 40px;
@@ -167,7 +165,7 @@ header {
     background: rgb(55, 144, 218);
 }
 
-.post-spread {}
+
 
 .outer {
     border-radius: 100px;

@@ -116,7 +116,7 @@ body{
     filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);
 }
 
-.new-action-img {}
+
 
 
 /* 新規アクションのアイコン系 終わり */
@@ -143,9 +143,7 @@ div.left>a {
     margin: 10px 0px 10px 30px;
 }
 
-header {
-    /* position: fixed; */
-}
+
 
 .site-image-icon {
     width: 40px;
@@ -165,7 +163,7 @@ header {
     background: ​#3790da;
 }
 
-.post-spread {}
+
 
 .outer {
     border-radius: 100px;
@@ -522,7 +520,7 @@ button.btn {
     height: auto;
     position: relative;
     padding: 10px 15px;
-    border-bottom: 1px solid #​#38444d;
+    border-bottom: 1px solid ​#38444d;
 }
 
 .setting-menu-inner {
