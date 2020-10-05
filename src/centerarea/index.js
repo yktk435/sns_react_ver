@@ -3,8 +3,8 @@ import Home from './home'
 // import Search from './Search'
 import Notification from './notification'
 import Dm from './dm'
-// import profile from './Paprofilege'
-// import setting from 'Setting./'
+import Profile from './profile'
+// import Setting from 'setting./'
 
 const CenterArea = ({ info }) => {
     let comp;
@@ -22,9 +22,9 @@ const CenterArea = ({ info }) => {
         case 'dm':
             comp = <Dm />
             break;
-        //         case 'profile':
-        // comp=<profile/>
-        //             break;
+        case 'profile':
+            comp = <Profile />
+            break;
         //         case 'setting':
         // comp=<setting/>
         //             break;
@@ -33,7 +33,7 @@ const CenterArea = ({ info }) => {
             break;
     }
     return (
-        <div className="main center border">
+        <div className="main center border" style={{ width: "560px", height: "100vh" }}>
             <React.Fragment>
                 {/* メニュー名 */}
                 <div className="menu-name-parent" aria-label="メニュー名">

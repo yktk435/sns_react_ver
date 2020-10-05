@@ -158,11 +158,11 @@ div.left>a {
 }
 
 .post-icon {
-    background-color: rgb(64, 169, 255);
+    background-color:red;
 }
 
 .post-icon:hover {
-    background: rgb(55, 144, 218);
+    background: #3790da;
 }
 
 

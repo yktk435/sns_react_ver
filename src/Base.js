@@ -9,7 +9,7 @@ class Base extends Component{
         super(props)
         this.state = {
             menuName: "通知",
-            menu: "home"
+            menu: "profile"
         }
     }
     render(){

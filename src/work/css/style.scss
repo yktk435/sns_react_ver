@@ -117,6 +117,9 @@ body{
 }
 
 
+.if-spreaded.mark:hover{
+filter: blur();
+}
 
 
 /* 新規アクションのアイコン系 終わり */
@@ -156,11 +159,11 @@ div.left>a {
 }
 
 .post-icon {
-    background-color: ​#40a9ff;
+    background-color:#40a9ff;
 }
 
 .post-icon:hover {
-    background: ​#3790da;
+    background-color:#3790da;
 }
 
 
@@ -190,7 +193,7 @@ div.left>a {
 }
 
 .icon-to-center-for-a:hover {
-    background-color: ​#5ae6ff;
+    background-color:rgba(90, 230, 255, 0.068);
     filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);
 }
 
@@ -222,7 +225,8 @@ div.left>a {
 }
 
 .spreaded-icon-a:hover {
-    background-color: ​#5ae6ff;
+    
+    background-color:rgba(90, 230, 255, 0.068);
     filter: invert(91%) sepia(99%) saturate(10000%) hue-rotate(203deg) brightness(169%) contrast(135%);
 }
 
@@ -282,7 +286,7 @@ div.left>a {
     /* 入力域の最大幅 */
     background: transparent;
     /* 入力域の背景色 */
-    border-bottom: 1px solid ​#303c43;
+    border-bottom: 1px solid rgb(48, 60, 67);
     /* 入力域の枠線   */
     border-radius: 4px;
     /* 入力域の角丸   */
@@ -346,13 +350,13 @@ div.left>a {
 .btn--orange,
 a.btn--orange {
     color: #fff;
-    background-color: ​#40a9ff;
+    background-color:#40a9ff;
 }
 
 .btn--orange:hover,
 a.btn--orange:hover {
     color: #fff;
-    // background: ​#3790da;
+    background-color:#3790da;
 }
 
 a.btn--radius {
@@ -490,8 +494,8 @@ button.btn {
 }
 
 .blue-when-hover:hover {
-    background-color: ​#5ae6ff;
-    color: #6a7b87;
+    background-color: rgba(90, 230, 255, 0.068);
+    color:#1da1f2;
 }
 
 
@@ -504,9 +508,39 @@ button.btn {
 /****************************************************************/
 
 .edit-prof:hover {
-    background-color: rgba(86, 86, 255, 0.123);
+    background-color: rgba(43, 91, 161, 0.123);
 }
+// header画像
 
+.header-image{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: 0% 28%;
+}
+// ユーザ画像
+.user-image-a{
+    display: block;
+                        position: absolute;
+                        top: 50%;
+                        left: 1%;
+                        transform: translate(0, -50%);
+}
+.user-image-image-tag{
+
+    width: 140px;
+    border-radius: 50%;
+    height: 140px;
+    object-fit: cover;
+    object-position:20% 45%;
+    border: 5px solid rgb(20, 29, 38);
+}
+.propfile-menu{
+    padding: 15px 0;
+    float: left;
+    font-weight: bold;
+    border-bottom:3px solid rgb(48, 60, 67)
+}
 
 /****************************************************************/
 

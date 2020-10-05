@@ -3,7 +3,7 @@ import React from 'react';
 const LeftArea = () => {
     return (
         <header>
-            <div className="main left border" style={{ overflow: "auto" }}>
+            <div className="main left border" style={{ overflow: "auto" ,overflow: "auto", height: "100vh", width: "250px",}}>
                 <React.Fragment>
                     <div className="div-outside-image site-image">
                         <a className="icon-link icon-to-center-for-a" href="" aria-label="サイトアイコン">
@@ -20,7 +20,7 @@ const LeftArea = () => {
                         <div class="div-outside-image icon-container" style={{width: "70%",marginBottom: "140px"}}>
                             <a class="a-to-block post-icon" href="" style={{borderRadius: "100px", position: "relative"}}>
                                 <div class="block-to-center">
-                                    <img class="image-icon" src="image/cathand2.png" alt="投稿開始ボタン" />
+                                    <img class="image-icon" src="./src/work/image/cathand2.png" alt="投稿開始ボタン" />
                                 </div>
                             </a>
                         </div>
