@@ -13,7 +13,8 @@ import * as reducers from './reducers';
 export default function createStore(history) {
   return reduxCreateStore(
     combineReducers({
-      ...reducers,
+      [shopping]:shopping,
+      [Ranking]:Ranking,
       router: routerReducer,
     }),
     applyMiddleware(
