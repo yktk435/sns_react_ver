@@ -1,12 +1,28 @@
-import Base from "./Base.js";
+// src/index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
+import { ConnectedRouter } from 'react-router-redux'; // 追加
+import createBrowserHistory from 'history/createBrowserHistory'; // 追加
+import App from './App';
+import createStore from './createStore'; // 追加
 
-import React from 'react'
-import ReactDOM from "react-dom";
+// historyのインスタンスを生成
+const history = createBrowserHistory();
 
-// import "./work/css/style.css";
-import "./work/css/style.scss";
+// Storeの生成
+const store = createStore(history);
 
 ReactDOM.render(
-    <Base/>,
-    document.getElementById("app")
+  <Provider store={store}>
+    {/*
+      Linkコンポーネントなどが動作するように
+      react-router-domのRouterではなく
+      react-router-reduxのConnectedRouterを使う
+    */}
+    <ConnectedRouter history={history}>
+      <App />
+    </ConnectedRouter>
+  </Provider>,
+  document.getElementById('root')
 );
