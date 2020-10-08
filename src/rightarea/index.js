@@ -1,6 +1,17 @@
 import React from 'react'
+import { RightAreaSetting} from '../centerarea/setting'
+const RightArea = ({ info }) => { 
+    let mode=<SearchArea/>
+    console.log(info)
+    if (info.menu=="setting") {
+        mode=<RightAreaSetting itemName="ログインとセキュリティ" settingItemMenuName="アカウント"/>
+    } 
+    return (
+        mode
+    )
+}
 
-const RightArea = (props) => { 
+const SearchArea = () => {
     return (
         <div className="main right border" style={{ overflow: "auto" ,height: "100vh", width: "350px",}}>
                 {/* <!-- 検索バー --> */}

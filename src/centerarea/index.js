@@ -4,7 +4,7 @@ import Home from './home'
 import Notification from './notification'
 import Dm from './dm'
 import Profile from './profile'
-// import Setting from 'setting./'
+import Setting from './setting'
 
 const CenterArea = ({ info }) => {
     let comp;
@@ -25,9 +25,9 @@ const CenterArea = ({ info }) => {
         case 'profile':
             comp = <Profile />
             break;
-        //         case 'setting':
-        // comp=<setting/>
-        //             break;
+                case 'setting':
+        comp=<Setting/>
+                    break;
 
         default:
             break;
